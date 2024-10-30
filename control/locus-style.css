@@ -1,0 +1,119 @@
+/* Elements in all Locus widgets. */
+
+.pp-container { /* Prevent images from showing beyond, use your sidebar width here if needed*/
+ margin:0;padding:0;display:table;
+}
+
+.pp-anycontent{margin:0;padding:0} /* No defined category container */
+
+.pp-category{ margin:0;padding:0} /* Category link container */
+
+.pp-title { margin:0;padding:0}  /* Post title container */
+
+.pp-title a {
+ margin:2px 5px 10px 0;
+ font-weight: bold;
+ font-size: 12px}
+
+.pp-category-description{ /* Category description container */
+ font-weight:normal
+}
+
+.pp-description{ /* Optional description/text container */
+ margin:0;
+ font-style: italic;
+ font-size: 12px
+}
+
+.pp-thumb {float:left; margin:0 10px 10px 0;border:1px solid #ccc; }
+
+.pp-thumb img{margin:5px; border:none;}
+
+.pp-date{ /* For date display */
+font:normal 10px arial;display:table;margin: 0 5px 0 0
+}
+
+.pp-content{ /* For content or excerpt */
+ float:left;margin:0 0 0 10px
+}
+
+.pp-divisor{ /*A DIV, styles the posts divisor */
+ border-bottom:1px solid #eee;margin:10px 0 10px;clear:both;
+}
+
+.pp-read-more { /*ARead More link container */
+
+}
+
+.pp-box-lorem-2 { /*Container for posts from category called "lorems" */
+ border:1px dashed #ccc; padding:10px
+}
+
+.pp-box-lorem-2 .pp-category-description, .pp-box-vivamus .pp-category-description{
+ font:italic 11px georgia
+}
+
+.pp-box-lorem-2 .pp-category-lorem-2{
+ font:bold italic 26px georgia
+}
+
+
+
+.pp-box-lorem-2 a{
+ color:#33CC66
+}
+
+
+.pp-box-vivamus .pp-category-vivamus {
+ background:#E01B75;padding-left:4px
+}
+.pp-box-vivamus .pp-category-vivamus a{
+ color:#fff
+}
+
+
+ /*Style by category examples */
+.pp-box-lorems a, .pp-cont-lorems a {color:#FF0099} /*A category called "lorems" */
+.pp-category-lorems, .pp-cont-lorems .pp-category{background:#FF0099;padding:5px;margin:0 0 10px 0}
+.pp-category-lorems a, .pp-cont-lorems .pp-category a {font:bold 12px arial;text-transform:uppercase;color:#fff}
+
+.pp-box-ipsums {background:#f7f7f7}  /*A category called "ipsums" */
+.pp-box-ipsums a, .pp-cont-ipsums a {color:#33CCCC}
+.pp-category-ipsums, .pp-cont-ipsums .pp-category{background:#33CCCC;padding:5px;margin:0 0 10px 0}
+.pp-category-ipsums a, .pp-cont-ipsums .pp-category a {font:bold 12px arial;text-transform:uppercase;color:#fff}
+
+.pp-box-post-format a, .pp-cont-post-format a {color:#FF6600} /*A category called "post-format" */
+.pp-category-post-format, .pp-cont-post-format .pp-category{background:#FF6600;padding:5px;margin:0 0 10px 0}
+.pp-category-post-format a, .pp-cont-post-format .pp-category a {font:bold 12px arial;text-transform:uppercase;color:#fff}
+
+
+
+/* You can use Locus for a gallery like display of posts. Hide elementes using display:none, i.e pp-title, pp-divisor*/
+
+.pp-box-photoshop .pp-read-more a{
+ background:#999; font:bold 12px arial;color:#fff;padding:3px 5px;
+ float:right
+}
+
+.pp-box-photoshop .pp-title{
+ display:none
+}
+
+.pp-box-photoshop .pp-divisor{
+ display:none
+}
+
+
+.pp-box-photoshop .pp-thumb{ /*Tricky size thumbs.*/
+ width:75px;height:75px
+}
+
+.pp-box-photoshop .pp-img-wrap img{
+ width:90px;height:90px
+}
+
+
+.pp-box-photoshop .pp-img-wrap {/*Tricky for img wrapper, thumbs aren`t resized at all */
+ width:70px;float:left; height:70px; overflow:hidden;
+}
+
